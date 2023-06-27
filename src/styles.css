@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:calc(100% - 94%);
+    background-color: whitesmoke;
+    border-radius: 20px;
+    width: 60%;
+    padding-bottom: 40px;
+    padding-top: 30px;
+  }
+  .pad{
+    padding-bottom: 10px;
+  }

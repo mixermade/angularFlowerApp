@@ -1,0 +1,14 @@
+<h2>Will i die if i eat this plant (theoretically)</h2>
+<form (submit)="searchInArray(request.value)">
+  <div style="margin-top:5%" class="input-group mb-3">
+  <input #request type="text" class="form-control" placeholder="Is this poisonous?" aria-describedby="button-addon2">
+  <button class="btn btn-dark" type="submit" id="button-addon2">Search</button>
+</div>
+</form>
+<p><ul *ngFor="let flower of flowers">
+  <li *ngIf="flower.selected">{{flower.poison}}
+<button style="margin-left:10px" type="button" class="btn btn-dark" routerLink="/flower-page/{{flower.name}}">
+  See more
+</button>
+</li>
+  </ul>

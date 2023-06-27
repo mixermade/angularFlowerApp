@@ -1,0 +1,9 @@
+
+<div *ngFor="let flower of flowers"><div *ngIf="flower.selected">
+    <p>{{flower.name}}  
+    <p> Latin name: {{flower.latname}}
+    <p> Floral formula: {{flower.formula}}</div>
+</div>
+<button type="button" class="btn btn-dark" routerLink="/">
+    Back
+</button>
